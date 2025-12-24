@@ -1,0 +1,8 @@
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+    height: 10vh;
+    width: 100vw;
+}
