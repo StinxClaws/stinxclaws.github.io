@@ -23,13 +23,27 @@ nav a {
 
 #home {
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
     height: 90vh;
     width: 100vw;
 }
 
 .home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
     padding-left: 50px;
-    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.greet, .name, .qoute {
+    
+}
+
+.its {
+    font-weight: normal;
 }
