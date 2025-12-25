@@ -1,8 +1,35 @@
-nav {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
     height: 10vh;
     width: 100vw;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+    padding: 10px;   
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 90vh;
+    width: 100vw;
+}
+
+.home-text {
+    padding-left: 50px;
+    padding-bottom: 50px;
 }
