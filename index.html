@@ -13,7 +13,7 @@
             <a href="#about">About Me</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#contacts">Contact</a>
         </nav>
     </header>
     <section id="home">
@@ -101,29 +101,38 @@
         </div>
     </section>
     <section id="projects">
-        <h1>My Project</h1>
+        <div class="my-project">
+            <h1>My Project</h1>
+        </div>
+        <div class="proj"></div>
     </section>
     <section id="contacts">
-        <h1>Contact Me</h1>
+        <div class="contact-title">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="contact-layout">
+        <div class="social">
+            <h2>Email</h2>
+            <p>christiandaveporcadilla@gmail.com</p>
+        </div>
         <form>
-            <label for="name">Name</label>
-            <br>
+        <div class="message-box">
             <input type="text" id="name" name="name" required>
-            <br>
-            <br>
-            <label for="email">Email</label>
-            <br>
+            <label for="name">Full Name</label>
+        </div>
+        <div class="message-box">
             <input type="email" id="email" name="email" required>
-            <br>
-            <br>
-            <label for="message">Message</label>
-            <br>
-            <textarea id="message" name="message" required></textarea>
-            <br>
-            <br>
-            <button type="submit">Send Message</button>
+            <label for="email">Email</label>
+        </div>
+        <div class="message-box">
+            <textarea id="message" required></textarea>
+            <label for="message">Type Your Message</label>
+        </div>
+            <button type="submit">Send</button>
+        </div>
+        </div>
         </form>
     </section>
-    <footer></footer>
+    <footer>&copy 2025 by Christian Dave Porcailla. All rights reserved.</footer>
 </body>
 </html>
