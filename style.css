@@ -43,3 +43,117 @@ h1 {
 .its {
     font-weight: normal;
 }
+
+#about {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    height: 20vh;
+    width: 100vw;
+}
+
+.edu-tec {
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    width: 100vw;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    height: 60vh;
+    width: 50vw;
+}
+
+.technical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 60vh;
+    width: 50vw;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    height: 20vh;
+    width: 100vw;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.skill-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100vw;
+}
+
+.my-skills {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    width: 100vw;
+}
+
+.prog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 40vh;
+    width: 50vw;
+}
+
+.soft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 40vh;
+    width: 50vw;
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 40vh;
+    width: 50vw;
+}
+
+.tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 40vh;
+    width: 50vw;
+}
