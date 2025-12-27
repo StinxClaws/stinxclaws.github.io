@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Christian Dave Portfolio</title>
+    <script>
+        if(localStorage.getItem('data-theme')) {
+            document.documentElement.setAttribute('data-theme', localStorage.getItem('data-theme'));
+        }
+    </script>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navi">
             <a href="#home">Home</a>
             <a href="#about">About Me</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contacts">Contact</a>
+        </nav>
+        <nav class="icon">
+            <a href="#" class="color" id="theme-toggle"><i id="theme-icon" class="sun"></i></a>
         </nav>
     </header>
     <section id="home">
@@ -38,7 +46,7 @@
         <div class="edu-tec">
         <div class="education">
             <h2>Educational Background</h2>
-            <p>Currently pursuing a degree in (BSIT) Bachelor of Science in Information Technology<br> student in Eastern Visayas State University - Ormoc City Campus. I have a foundation in programming, web development, and computer system</p>
+            <p>Currently pursuing a degree in Bachelor of Science in Information Technology student in Eastern Visayas State University - Ormoc City Campus. I have a foundation in programming, web development, and computer system</p>
         </div>
         <div class="technical">
             <h2>Technical Interest</h2>
@@ -47,7 +55,7 @@
                 <li>Networking</li>
                 <li>Linux system administration and shell scripting</li>
                 <li>Exploring AI and Machine Learning technologies</li>
-                <li>Exploring new technologies, software, and applications to create innovation and sulotions</li>
+                <li>Exploring technologies, software, and applications</li>
             </ul>
         </div>
         </div>
@@ -134,5 +142,6 @@
         </form>
     </section>
     <footer>&copy 2025 by Christian Dave Porcailla. All rights reserved.</footer>
+    <script src="script.js"></script>
 </body>
 </html>
