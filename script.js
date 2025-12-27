@@ -26,3 +26,31 @@ function updateIcon(theme){
         themeIcon.classList.add('sun');
     }
 }
+
+
+
+const words = ["Web Developer", "IT Student"];
+let wordIndex = 0;
+let charIndex = words[0].length;
+let deleting = true;
+
+const span = document.getElementById("student");
+
+setInterval(() => {
+  if (deleting) {
+    span.textContent = words[wordIndex].slice(0, charIndex--);
+
+    if (charIndex < 0) {
+      deleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+      charIndex = 0;
+    }
+  } else {
+    span.textContent = words[wordIndex].slice(0, charIndex++);
+
+    if (charIndex > words[wordIndex].length) {
+      deleting = true;
+      charIndex = words[wordIndex].length;
+    }
+  }
+}, 150);

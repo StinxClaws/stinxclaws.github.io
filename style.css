@@ -186,6 +186,12 @@ header a:hover {
     width: 50vw;
 }
 
+#student {
+    color: #BCE7FF;
+    border-right: 2px solid black;
+    padding-right: 2px;
+}
+
 h1 {
     font-size: 4rem;
     font-weight: bold;
@@ -452,6 +458,7 @@ form {
 .message-box {
     position: relative;
     width: 300px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
