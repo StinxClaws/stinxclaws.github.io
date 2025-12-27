@@ -180,7 +180,7 @@ header a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    padding-left: 2rem;
     gap: 50px;
     height: 90vh;
     width: 50vw;
@@ -255,6 +255,9 @@ h1 {
 .edu-tec {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     height: 60vh;
     width: 100vw;
 }
@@ -266,7 +269,7 @@ h1 {
     text-align: center;
     gap: 20px;
     height: 60vh;
-    width: 50vw;
+    width: 40vw;
 }
 
 .technical {
@@ -276,7 +279,7 @@ h1 {
     align-items: center;
     gap: 20px;
     height: 60vh;
-    width: 50vw;
+    width: 40vw;
 }
 
 .hobbies {
