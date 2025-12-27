@@ -1,4 +1,3 @@
-
 const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
 const root = document.documentElement;

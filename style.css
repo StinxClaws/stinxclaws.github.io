@@ -23,6 +23,10 @@
     color: #fff;
 }
 
+[data-theme="dark"] .front-photo img {
+  filter: brightness(50%);
+}
+
 [data-theme="dark"] #about {
     background: linear-gradient(120deg, #1A9DC9, #145B91);
     color: #fff;
@@ -128,24 +132,24 @@ header {
 }
 
 header a {
-    color: #62D9F3;
-    text-decoration: none;
     transition: color 1s ease-in-out, transform 0.6s ease;
+    text-decoration: none;
+    color: #62D9F3;
 }
 
 header a:hover {
-    color: #F3541B;
     transform: scale(1.05);
+    color: #F3541B;
 }
 
 .navi {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
     padding: 10px;
     height: 10vh;
     width: 90vw;
+    gap: 50px;
 }
 
 .navi a {
@@ -162,15 +166,63 @@ header a:hover {
 
 .home-text {
     display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100vw;
+}
+
+.introduction {
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     gap: 50px;
-    padding-left: 50px;
+    height: 90vh;
+    width: 50vw;
 }
 
 h1 {
     font-size: 4rem;
     font-weight: bold;
+}
+
+.front-photo {
+    display: block;
+    height: 90vh;
+    width: 50vw;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.front-photo img {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.35);
+    transform: translate(-50%, -50%);
+    transition: opacity 0.35s ease;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+}
+
+.img-normal {
+  opacity: 1;
+}
+
+.img-hover {
+  opacity: 0;
+}
+
+.front-photo:hover .img-hover {
+  opacity: 1;
+}
+
+.front-photo:hover .img-normal {
+  opacity: 0;
 }
 
 .its {
