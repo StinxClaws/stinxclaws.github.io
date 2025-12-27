@@ -1,16 +1,51 @@
 :root {
     --icon-width: 30px;
     --icon-height: 30px;
-}
 
-:root, [data-theme="light"] {
     --bg-color: white;
     --text-color: black;
+    --icon-color: orange;
 }
 
 [data-theme="dark"] {
     --bg-color: #1F1B24;
     --text-color: white;
+    --icon-color: orange;
+}
+
+[data-theme="dark"] header {
+    background-color: rgba(8, 23, 63, 0.95);
+    color: #fff;
+}
+
+[data-theme="dark"] #home {
+    background: linear-gradient(135deg, #08173F, #1A3B7A);
+    color: #fff;
+}
+
+[data-theme="dark"] #about {
+    background: linear-gradient(120deg, #1A9DC9, #145B91);
+    color: #fff;
+}
+
+[data-theme="dark"] #skills {
+    background: linear-gradient(135deg, #B5801A, #9C290F);
+    color: #fff;
+}
+
+[data-theme="dark"] #projects {
+    background: linear-gradient(135deg, #145B91, #1A9DC9);
+    color: #fff;
+}
+
+[data-theme="dark"] #contacts {
+    background: linear-gradient(135deg, #08173F, #9C290F);
+    color: #fff;
+}
+
+[data-theme="dark"] footer {
+    background-color: rgba(8, 23, 63, 0.95);
+    color: #fff;
 }
 
 body {
@@ -18,7 +53,7 @@ body {
     color: var(--text-color);
 }
 
-.icon {
+.symbol {
     display: flex;
     flex-direction: row-reverse;
     padding: 25px 25px 0 0;
@@ -29,6 +64,19 @@ body {
 
 .color {
     color: inherit;
+}
+
+.sun,
+.mon {
+    display: inline-block;
+    width: var(--icon-width);
+    height: var(--icon-height);
+    background-color: var(--icon-color);
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
 }
 
 .sun {
@@ -65,16 +113,32 @@ body {
     padding: 0;
 }
 
+section {
+    transition: background 0.4s ease;
+}
+
 
 header {
     display: flex;
     flex-direction: row;
+    background-color: rgba(13, 37, 89, 0.9);
+    color: #fff;
     height: 10vh;
     width: 100vw;
 }
 
+header a {
+    color: #62D9F3;
+    text-decoration: none;
+    transition: color 1s ease-in-out, transform 0.6s ease;
+}
+
+header a:hover {
+    color: #F3541B;
+    transform: scale(1.05);
+}
+
 .navi {
-    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,6 +154,8 @@ header {
 
 #home {
     display: flex;
+    background: linear-gradient(135deg, #0D2559, #2367BE);
+    color: #fff;
     height: 90vh;
     width: 100vw;
 }
@@ -114,6 +180,8 @@ h1 {
 #about {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(120deg, #62D9F3, #2367BE);
+    color: #111;
     height: 100vh;
     width: 100vw;
 }
@@ -166,6 +234,8 @@ h1 {
 #skills {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(135deg, #F2AA27, #F3541B);
+    color: #111;
     height: 100vh;
     width: 100vw;
 }
@@ -228,6 +298,8 @@ h1 {
 #projects {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(135deg, #2367BE, #62D9F3);
+    color: #fff;
     height: 100vh;
     width: 100vw;
 }
@@ -244,6 +316,8 @@ h1 {
 #contacts {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(135deg, #0D2559, #F3541B);
+    color: #fff;
     height: 80vh;
     width: 100vw;
 }
@@ -330,6 +404,9 @@ button {
 footer {
     display: flex;
     flex-direction: row;
+    background: linear-gradient(90deg, #0D2559, #2367BE);
+    background-color: rgba(13, 37, 89, 0.9);
+    color: #fff;
     justify-content: center;
     align-items: center;
     height: 20vh;
