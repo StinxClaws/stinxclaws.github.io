@@ -29,7 +29,7 @@ function updateIcon(theme){
 
 
 
-const words = ["Web Developer", "IT Student"];
+const words = ["| Web Developer", "| IT Student"];
 let wordIndex = 0;
 let charIndex = words[0].length;
 let deleting = true;
@@ -54,3 +54,16 @@ setInterval(() => {
     }
   }
 }, 150);
+
+const icon = document.getElementById("menuIcon");
+const nav = document.getElementById("navMenu");
+
+icon.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
+nav.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+});
