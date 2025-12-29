@@ -245,7 +245,7 @@ body {
     animation-range: entry 0% cover 30%;
 }
 
- button {
+button {
     animation: rights linear;
     animation-timeline: view();
     animation-range: entry 0vh cover 20vh;
@@ -711,10 +711,6 @@ header {
     width: 100%;
     z-index: 1000;
     background: transparent;
-}
-
-.symbol {
-    padding: 0;
 }
 
 .menu {
