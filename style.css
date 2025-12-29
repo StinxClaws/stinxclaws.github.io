@@ -18,6 +18,14 @@
     color: #fff;
 }
 
+[data-theme="dark"] header .color {
+    color: black;
+}
+
+[data-theme="dark"] header .color:hover {
+    color: white;
+}
+
 [data-theme="dark"] #home {
     background: linear-gradient(135deg, #08173F, #1A3B7A);
     color: #fff;
@@ -265,7 +273,12 @@ header a {
 
 header a:hover {
     transform: scale(1.05);
-    color: #F3541B;
+    color: blue;
+}
+
+header .color:hover {
+    transform: scale(1.05);
+    color: black;
 }
 
 .menu {
