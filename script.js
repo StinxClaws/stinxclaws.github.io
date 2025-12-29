@@ -27,8 +27,6 @@ function updateIcon(theme){
     }
 }
 
-
-
 const words = ["| Web Developer", "| IT Student"];
 let wordIndex = 0;
 let charIndex = words[0].length;
@@ -39,7 +37,6 @@ const span = document.getElementById("student");
 setInterval(() => {
   if (deleting) {
     span.textContent = words[wordIndex].slice(0, charIndex--);
-
     if (charIndex < 0) {
       deleting = false;
       wordIndex = (wordIndex + 1) % words.length;
@@ -47,7 +44,6 @@ setInterval(() => {
     }
   } else {
     span.textContent = words[wordIndex].slice(0, charIndex++);
-
     if (charIndex > words[wordIndex].length) {
       deleting = true;
       charIndex = words[wordIndex].length;
