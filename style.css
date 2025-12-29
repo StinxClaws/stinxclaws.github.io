@@ -831,6 +831,20 @@ header {
     width: 100vw;
 }
 
+.technical ul {
+    list-style: none;
+}
+
+.prog-soft,
+.tool-tech {
+    text-align: center;
+}
+
+.prog ul, .soft ul,
+.tools ul, .tech ul {
+    list-style: none;
+}
+
 #projects {
     display: flex;
     flex-direction: column;
